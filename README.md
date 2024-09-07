@@ -40,7 +40,7 @@ This project is an Amazon product scraper built using Python with **Selenium** a
     Run the script with your Python interpreter:
    ```bash
    python amazon_scraper.py
-    ```
+   ```
 
 **The script will:**<br>
     > Solve CAPTCHAs automatically if encountered.<br>
