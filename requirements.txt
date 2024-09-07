@@ -1,0 +1,7 @@
+selenium
+webdriver-manager
+amazoncaptcha
+beautifulsoup4
+lxml
+openpyxl
+pandas
