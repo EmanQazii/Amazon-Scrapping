@@ -38,9 +38,8 @@ This project is an Amazon product scraper built using Python with **Selenium** a
 
 **Run the Script:**
     Run the script with your Python interpreter:
-    
-    ```bash
-    python amazon_scraper.py
+   ```bash
+   python amazon_scraper.py
     ```
 
 **The script will:**<br>
