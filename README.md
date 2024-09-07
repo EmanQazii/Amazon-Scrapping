@@ -29,19 +29,22 @@ This project is an Amazon product scraper built using Python with **Selenium** a
 ## Running the Script:
 
 **Define the Product Search:**
-    Modify the search_element and num_pages variables in the script to choose the product category and the number of pages to scrape:<br>
-    For example:<br>
+    Modify the search_element and num_pages variables in the script to choose the product category and the number of pages to scrape:
+
+    For example:
     
     ```bash
     search_element = "Laptops"
     num_pages = 10
     ```
+
 **Run the Script:**
     Run the script with your Python interpreter:<br>
     
     ```bash
     python amazon_scraper.py
     ```
+    
 **The script will:**<br>
     > Solve CAPTCHAs automatically if encountered.<br>
     > Scrape product data and save it to an Excel file named amazon_<search_element>_data.xlsx.<br>
