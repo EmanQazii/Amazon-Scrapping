@@ -13,15 +13,14 @@ This project is an Amazon product scraper built using Python with **Selenium** a
 
 1. **Install the required dependencies:**
    Before running the project, ensure that all necessary libraries are installed. You can install them by running:
-
+    
    ```bash
    pip install -r requirements.txt
     ```
 
-Alternatively, you can install the libraries manually using:
-     
-    ```bash
-    pip install selenium webdriver-manager amazoncaptcha beautifulsoup4 lxml openpyxl pandas
+    Alternatively, you can install the libraries manually using:
+   ```bash
+   pip install selenium webdriver-manager amazoncaptcha beautifulsoup4 lxml openpyxl pandas
     ```
 
 2. **Download ChromeDriver:**
@@ -30,16 +29,16 @@ Alternatively, you can install the libraries manually using:
 ## Running the Script:
 
 **Define the Product Search:**
-    Modify the search_element and num_pages variables in the script to choose the product category and the number of pages to scrape:
-    for example:
-     
+    Modify the search_element and num_pages variables in the script to choose the product category and the number of pages to scrape:<br>
+    For example:<br>
+
     ```bash
     search_element = "Laptops"
     num_pages = 10
     ```
 **Run the Script:**
-    Run the script with your Python interpreter:
-    
+    Run the script with your Python interpreter:<br>
+
     ```bash
     python amazon_scraper.py
     ```
@@ -70,6 +69,6 @@ Alternatively, you can install the libraries manually using:
     After scraping, the data is saved to an Excel file with clickable product links using openpyxl.
 
 **Error Handling:**
-    The script includes error handling for:
-        *CAPTCHA Solving:* Attempts to solve CAPTCHA up to 3 times.
-        *Timeout and NoSuchElementException:* Retries to load elements when they are not found.
+    The script includes error handling for:<br>
+        *CAPTCHA Solving:* Attempts to solve CAPTCHA up to 3 times.<br>
+        *Timeout and NoSuchElementException:* Retries to load elements when they are not found.<br>
