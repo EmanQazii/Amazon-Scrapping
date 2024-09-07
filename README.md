@@ -13,13 +13,16 @@ This project is an Amazon product scraper built using Python with **Selenium** a
 
 1. **Install the required dependencies:**
    Before running the project, ensure that all necessary libraries are installed. You can install them by running:
-   
+
    ```bash
    pip install -r requirements.txt
+    ```
 
-   Or install them manually:
-   ```bash
-   pip install selenium webdriver-manager amazoncaptcha beautifulsoup4 lxml openpyxl pandas
+Alternatively, you can install the libraries manually using:
+
+    ```bash
+    pip install selenium webdriver-manager amazoncaptcha beautifulsoup4 lxml openpyxl pandas
+    ```
 
 2. **Download ChromeDriver:**
     Ensure that ChromeDriver is installed and matches your Chrome browser version. This project uses the webdriver-manager library to handle it automatically.
@@ -29,19 +32,21 @@ This project is an Amazon product scraper built using Python with **Selenium** a
 **Define the Product Search:**
     Modify the search_element and num_pages variables in the script to choose the product category and the number of pages to scrape:
     for example:
-    ```python
+
+    ```bash
     search_element = "Laptops"
     num_pages = 10
-
+    ```
 **Run the Script:**
     Run the script with your Python interpreter:
-    ```python
+
+    ```bash
     python amazon_scraper.py
-    
+    ```
 The script will:
-    > Solve CAPTCHAs automatically if encountered.
-    > Scrape product data and save it to an Excel file named amazon_<search_element>_data.xlsx.
-    > Add clickable product links to the Excel file.
+    - Solve CAPTCHAs automatically if encountered.
+    - Scrape product data and save it to an Excel file named amazon_<search_element>_data.xlsx.
+    - Add clickable product links to the Excel file.
 
 **Excel File Output:**
     The output Excel file will be named according to the search element, e.g., amazon_Laptops_data.xlsx.
